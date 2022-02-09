@@ -12,17 +12,17 @@
 </head>
 
 <body>
-    <!------------------header-------------------->
+    <!-- ----------------header---------------------------------->
     <section id="header">
         <a href="index.html"><img src="./img/logo.png" class="logo" alt=""></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.html">home</a></li>
                 <li><a href="shop.html">shop</a></li>
-                <li><a class="active" href="blog.html">blog</a></li>
+                <li><a href="blog.html">blog</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="contact.html">contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -32,30 +32,83 @@
         </div>
     </section>
 
-    <!-------------------------------feature-------------------------------->
-    <section id="page-header" class="blog-header">
-        <h2>#readmore</h2>
-        <p>read all case studies about our products</p>
+    <!-- --------------------feature------------------------------>
+    <section id="page-header" class="contact-header">
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MASSAGE, we love to hear from you!</p>
     </section>
-    <!----------------------------blog section----------------------------->
-    <section id="b-section">
-        <div class="b-img"><img src="img/blog/b1.jpg" alt=""></div>
-        <div class="blog-txt">
-            <h4>the cotton-jersey zip-up hoodies :</h4>
-            <p class="lih">A hoodie (in some cases it is also spelled hoody[1] and alternatively known as a hooded sweatshirt)[2] is a sweatshirt with a hood.[1] Hoodies often include a muff sewn onto the lower front, and (usually) a drawstring to adjust the hood opening. It covers most of the head and neck and sometimes the face. Hoodies may be worn for protection against the environment (Cold weather, Rain, etc.)</p></div>
-            <h4>New Zealand :</h4>
-            <p class="lih">The "Hoodies on Parliament—politicians challenge youth stereotypes" campaign was launched in May 2008 in New Zealand (NZ) as part of the annual national Youth Week event, a pro-youth initiative organized to challenge youth stereotypes. To launch the campaign, NZ politicians, including National MP Nicky Wagner, Green Party MPs Sue Bradford, Nandor Tanczos and Metiria Turei, and Maori party MP Hone Harawira, wore hoodies while standing on the steps of the country's parliament. Archbishop David Moxon, Archbishop of the Anglican Dioceses, and Brian Turner President of the Methodist Church of NZ also participated in the campaign.[14]</p>
-            <p class="lih">"Goodie in a Hoodie" day was then run in 2009 by New Zealand Adolescent Health and Development (NZAAHD) in partnership with Age Concern—the organisations used the campaign to highlight the stereotypes that both young people and the elderly face in New Zealand. Liz Baxendine, president of Age Concern at the time, said to the media:</p>
+
+    <!-------------------------Cart item------------------------>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                    <td>Remove</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>cartoon astronaut T-Shiret</td>
+                    <td>rs. 549</td>
+                    <td><input type="number" value="1"></td>
+                    <td>rs. 549</td>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                </tr>
+                <tr>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>cartoon plant T-Shiret</td>
+                    <td>rs. 549</td>
+                    <td><input type="number" value="1"></td>
+                    <td>rs. 549</td>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                </tr>
+                <tr>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>cartoon brocode T-Shiret</td>
+                    <td>rs. 549</td>
+                    <td><input type="number" value="1"></td>
+                    <td>rs. 549</td>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!----------------------------------------------------------->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Aplly Coupon</h3>
+            <div class="">
+                <input type="text" name="" placeholder="Enter your coupon" id="">
+                <button class="normal"> Apply</button>
+            </div>
         </div>
-        
+        <div id="subtotals">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>Rs 1647</td>
+                </tr>
+                <tr>
+                    <td>shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>Rs. 1647</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proced to checkout</button>
+        </div>
     </section>
-    <!--------------------------product--------------------------->
-    <section id="pagination" class="section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
-    </section>
-    <!---------------------------------------------------->
+
+    <!----------------------------------------------------------->
     <section id="newsletter" class="section-p1 section-m1">
         <div class="news-text">
             <h4>sign up for newsletter</h4>

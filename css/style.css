@@ -532,6 +532,93 @@ body{width: 100%;}
 .input-form button{background-color: #088178;
     margin: 20px;}
 .input-form button:hover{color: #fff;}
+/*--------------------------Cart Page-------------------------*/
+#cart{overflow-x: auto;}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table thead{
+    border:1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{padding-top: 15px;}
+#cart table tbody td{font-size: 13px;}
+#cart table img{width: 70px;}
+#cart table td:nth-child(1){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(6){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(4) input{
+    width: 30%;
+    padding: 10px 5px 10px 15px;
+}
+/*-------------------cart total-------------------*/
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#coupon h3, #subtotals h3{padding-bottom: 15px;}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+#coupon button, #subtotals button{
+    background-color: #088170;
+    color: #fff;
+    padding: 12px 20px;
+}
+#subtotals{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+#subtotals table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotals table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
 
 /* ------------media queris----------------------------- */
 @media (max-width: 799px) {
@@ -646,6 +733,10 @@ body{width: 100%;}
         width: 100vw;
         padding: 0;
     }
+    /* cart page*/
+    #cart-add{flex-direction: column;}
+    #coupon{width: 100%;}
+    #subtotals{width: 100%;}
 }
 
 
